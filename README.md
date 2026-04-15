@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Aether AI - Multi-Agent Web Architect
 
-## Getting Started
+Welcome to **Aether AI**, a state-of-the-art Multi-Agent Fullstack Developer system. This application leverages the power of Large Language Models (LLMs) via **LangGraph** to dynamically architect, design, and code user interface components based exclusively on your simple natural language prompts!
 
-First, run the development server:
+![Project Banner](https://img.shields.io/badge/Status-Active-success.svg) ![Next.js](https://img.shields.io/badge/Next.js-15+-black?logo=next.js) ![LangChain](https://img.shields.io/badge/LangGraph-Powered-blue)
+
+---
+
+## ✨ Features
+
+- **🧠 Multi-Agent Architecture**: Uses `LangGraph` to sequentially orchestrate specialized AI personas (Architect -> Frontend Developer -> Backend Designer).
+- **⚡ Real-Time Streaming**: Live Server-Sent Events (SSE) seamlessly connect backend Agent executions directly to a glowing, glassmorphic UI terminal.
+- **💻 Dynamic Code Generation**: Instead of rigid templates, the embedded `gpt-4o-mini` Engine writes uniquely customized Raw React Code every single time.
+- **🎨 Premium UI/UX**: Overhauled with ultra-modern glassmorphism, dynamic gradients, Tailwind CSS enhancements, and Framer Motion micro-animations.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js (App Router, Server-Sent Events)
+- **Styling**: Tailwind CSS & Framer Motion
+- **AI Core**: LangChain Core, LangGraph, and OpenAI (`gpt-4o-mini`)
+- **Language**: TypeScript
+
+---
+
+## 🚀 Getting Started
+
+Follow these instructions to spin up the Multi-Agent prototype on your local machine.
+
+### 1. Requirements
+
+- Node.js (v18 or higher recommended)
+- An active `OPENAI_API_KEY` for LLM integrations.
+
+### 2. Installation
+
+Clone the repository and install the NPM packages:
+
+```bash
+git clone https://github.com/MADHANRAJ24/AI-fullstack-devoloper.git
+cd "AI-fullstack-devoloper"
+npm install
+```
+
+### 3. Environment Variables
+
+Create a new file called `.env.local` in the project root directory and drop in your secret OpenAI key:
+
+```env
+OPENAI_API_KEY=sk-proj-...
+```
+
+### 4. Start the Dev Server
+
+Once variables are loaded, start up the Next.js development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. You're ready to engineer apps entirely by text!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔮 Future Road Map
 
-## Learn More
+- [ ] Connect the dynamic frontend code generation to an active sandbox (like Sandpack) to live-render the AI-authored HTML/React.
+- [ ] Incorporate custom API route execution for backend Agent integration.
+- [ ] Memory persistence across LLM generations.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Bootstrapped with `create-next-app` under the hood! Feedback and contributions are welcome.*
